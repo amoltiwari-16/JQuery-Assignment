@@ -60,13 +60,6 @@ $(function()
 				});
 
 				}
-				
-				// Check if no record is present
-				// if(!foundMatch)
-				// {	
-				// 	$('#results').css("background","#eee").css("height","250px");
-				// 	results.append('<h3 class="text-center">No match found, kindly search with some other keyword</h3>');
-				// }
 			},
 			//error message display if error occurs
 			error : function(){
