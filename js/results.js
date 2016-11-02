@@ -26,6 +26,7 @@ $(function()
 				}else
 				{
 					$.each(movies["Search"], function(i,movie){
+						$('.res-header').css("background","black");
 						$('.res-header').css("color","white");
 						pgCount++;
 						results.append('<div class="line-content list-group-item text-center"><img src="'+movie.Poster+'" alt="Pic" width="180" height="180"><br><strong>Title : '+movie.Title+'</strong><br>Year : '+movie.Year+'<br>ImdbID : '+movie.imdbID+'<br>Type : '+movie.Type+'<br></div>');
