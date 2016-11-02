@@ -10,7 +10,6 @@ $(function()
 		$('#pagin').empty();
 		$('.res-header').empty();
 		var movieName=$('#movie').val();
-		var foundMatch= false; 
 		var pgCount=0;
 		$.ajax(
 		{
@@ -26,8 +25,8 @@ $(function()
 					results.append('<h3 class="text-center">No match found, kindly search with some other keyword</h3>');
 				}else
 				{
-					$.each(movies["Search"], function(i,movie){ 
-						foundMatch=true;
+					$.each(movies["Search"], function(i,movie){
+						$('.res-header').css("color","white");
 						pgCount++;
 						results.append('<div class="line-content list-group-item text-center"><img src="'+movie.Poster+'" alt="Pic" width="180" height="180"><br><strong>Title : '+movie.Title+'</strong><br>Year : '+movie.Year+'<br>ImdbID : '+movie.imdbID+'<br>Type : '+movie.Type+'<br></div>');
 				});
@@ -58,7 +57,6 @@ $(function()
 				    $(this).addClass('current');
 				    showPage(parseInt($(this).text())) 
 				});
-
 				}
 			},
 			//error message display if error occurs
