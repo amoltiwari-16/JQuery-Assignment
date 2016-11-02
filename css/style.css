@@ -1,0 +1,65 @@
+body
+{
+	background: black;
+	color: black;
+}
+
+/* Search section */
+.srch
+{
+	margin: auto;
+	padding-top: 10px;
+	width: 300px;
+}
+
+/*Section to display results */
+#results 
+{	
+	background-image: url("../img/bgMovie.jpg");
+	height: 400px;
+}
+
+/*	class to store individual movie record */
+.line-content
+{	
+	width: 250px;
+	height: auto;
+	border :2px solid gray;
+	margin : 0px 0px 20px 670px;
+	padding :10px 0px 10px 0px;
+	font-size: 16px;
+	font-family: arial black;
+}
+
+.line-content:hover
+{	
+	border :2px solid black;
+}
+
+.line-content img
+{
+	opacity: 0.7;
+	filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+}
+
+.line-content img:hover
+{
+	filter: grayscale(0%);
+   -webkit-filter: grayscale(0%);
+   -moz-filter: grayscale(0%);
+	opacity: 1;
+}
+
+/* class for current page <li> of results */
+.current
+{
+  color: white;
+}
+
+#pagin li {
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px;
+}
